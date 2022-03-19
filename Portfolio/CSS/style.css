@@ -21,10 +21,25 @@
 
 .navbar{
 	width: 100%;
-	background: crimson;
+	/*background: lightsteelblue;*/
 	position: fixed;
-	padding: 15px 0px;
+	padding: 30px 0px;
 	font-family: 'Ubuntu', sans-serif;
+	transition: color 0.3 ease;
+}
+
+.navbar.sticky{
+	padding: 15px 0;
+	background: lightsteelblue;
+}
+
+
+.navbar.sticky .logo span{
+	color: darkblue;
+}
+
+.navbar.sticky .menu li a:hover{
+	color: darkblue;
 }
 
 .navbar .logo a{
@@ -32,6 +47,11 @@
 	font-size: 35px;
 	font-weight: 600;
 }
+
+.navbar .logo span{
+	color: lightsteelblue;
+}
+
 .navbar .menu li{
 	list-style: none;
 	display: inline-block;
@@ -42,6 +62,50 @@
 	font-size: 18px;
 	font-weight: 500;
 	margin-left: 25px;
+	transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+	color: lightsteelblue;
+	}
+
+/*menu button*/
+.menu-btn{
+	color: white;
+	font-size: 23px;
+	cursor: pointer;
+	display: none;
+}
+/*home selection design*/
+.home{
+	display: flex;
+	background: url("https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80") no-repeat center;
+	color: white;
+	height: 100vh;
+	min-height: 500px;
+	
+	font-family: 'Ubuntu', sans-serif;
 }
 
+.home .max-width{
+	margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+	font-size: 27px;
+}
+
+.home .home-content .text-2{
+	font-size: 75px;
+	font-weight: 600;
+	margin-left: -3px;
+}
+
+.home .home-content .text-3{
+	font-size: 40px;
+	margin-left: 5px 0;
+}
+
+.home .home-content .text-3 span{
+	color: lightsteelblue;
+}
 
