@@ -1,0 +1,25 @@
+body{
+    background-color: crimson;
+    margin: 20px 0;
+    font-family: sans-serif;
+
+}
+
+.wrapper{
+    width: 800px;
+    margin: 0 auto;
+    background-color: black;
+    border-radius: 6px;
+}
+
+header{
+    padding: 50px;
+
+}
+
+header>#logo{
+    font-size: 2em;
+}
+
+
+
