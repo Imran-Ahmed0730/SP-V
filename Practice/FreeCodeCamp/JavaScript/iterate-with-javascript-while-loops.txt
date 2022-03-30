@@ -1,0 +1,12 @@
+// Setup
+const myArray = [];
+var i = 0;
+
+while(i<=5)
+{
+  myArray.push(5-i);
+  i++;
+}
+
+// Only change code below this line
+console.log(myArray)
