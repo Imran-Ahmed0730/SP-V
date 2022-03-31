@@ -26,6 +26,7 @@
 	font-family: 'Ubuntu', sans-serif;
 	transition: color 0.3 ease;
 	z-index: 100;
+	height: 100px;
 }
 
 .navbar.sticky {
@@ -113,115 +114,6 @@
 	color: lightsteelblue;
 }
 
-
-/*resposive*/
-
-@media (max-width: 1300px) {
-	.home .max-width {
-		/*padding-left: 40px;*/
-		margin-left: 0px;
-	}
-}
-
-@media (max-width: 1104px) {
-	.about .about-content .left img {
-		height: 350px;
-		width: 350px;
-	}
-}
-
-
-}
-@media (max-width: 991px) {
-	.max-width {
-		padding: 0 80px;
-	}
-}
-@media (max-width: 947px) {
-	.menu-btn {
-		display: block;
-		z-index: 999;
-	}
-	
-	.menu-btn h2.active:before {
-		content: \274C;
-	}
-	
-	.navbar .menu {
-		position: fixed;
-		height: 100vh;
-		width: 100%;
-		top: 0;
-		left: -100%;
-		background: linear-gradient(darkblue, lightsteelblue);
-		text-align: center;
-		padding-top: 80px;
-		transition: all 0.3s ease;
-	}
-	
-	.navbar .menu li {
-		display: block;
-	}
-	
-	.navbar .menu.active {
-		left: 0;
-	}
-	
-	.navbar .menu li a {
-		display: inline-block;
-		font-size: 25px;
-		margin: 20px 0;
-	}
-	
-	.home .home-content .text-2 {
-		font-size: 70px;
-	}
-	
-	.home .home-content .text-3 {
-		font-size: 35px;
-	}
-	/*about section responsive*/
-	
-	.about .about-content .column {
-		width: 100%;
-	}
-
-	.about .about-content .left{
-		display: flex;
-		justify-content: space-between;
-		margin: 0 auto 60px;
-	}
-
-	.about .about-content .right{
-		flex: 100%;
-	}
-}
-@media (max-width: 700px) {
-	.max-width {
-		padding: 0 23px;
-	}
-	
-	.home .home-content .text-2 {
-		font-size: 55px;
-	}
-	
-	.home .home-content .text-3 {
-		font-size: 32px;
-	}
-}
-@media (max-width: 500px) {
-	.max-width {
-		padding: 0 23px;
-	}
-	
-	.home .home-content .text-2 {
-		font-size: 50px;
-	}
-	
-	.home .home-content .text-3 {
-		font-size: 32px;
-	}
-}
 /*servcie section styling*/
 .service{
 	color: white;
@@ -280,7 +172,7 @@
 	margin-bottom: 10px;
 }
 /*about section styling*/
-.about, .service {
+.about, .service, .skills {
 	font-family: 'poppins', sans-serif;
 }
 
@@ -288,7 +180,7 @@
 	content: "Who I Am";
 }
 
-.about .about-content, .service .serve-content {
+.about .about-content, .service .serve-content, .skills, .skill-content {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -368,3 +260,117 @@ section .title::after {
 	background: white;
 	transform: translateX(-50%);
 }
+
+
+
+
+/*responsive*/
+
+@media (max-width: 1300px) {
+	.home .max-width {
+		/*padding-left: 40px;*/
+		margin-left: 0px;
+	}
+}
+
+@media (max-width: 1104px) {
+	.about .about-content .left img {
+		height: 350px;
+		width: 350px;
+	}
+}
+
+@media (max-width: 991px) {
+	.max-width {
+		padding: 0 80px;
+	}
+}
+@media (max-width: 947px) {
+	.menu-btn {
+		display: block;
+		z-index: 999;
+	}
+	
+	.menu-btn h2.active:before {
+		content: \274C;
+	}
+	
+	.navbar .menu {
+		position: fixed;
+		height: 100vh;
+		width: 100%;
+		top: 0;
+		left: -100%;
+		background: linear-gradient(darkblue, lightsteelblue);
+		text-align: center;
+		padding-top: 80px;
+		transition: all 0.3s ease;
+	}
+	
+	.navbar .menu li {
+		display: block;
+	}
+	
+	.navbar .menu.active {
+		left: 0;
+	}
+	
+	.navbar .menu li a {
+		display: inline-block;
+		font-size: 25px;
+		margin: 20px 0;
+	}
+	
+	.home .home-content .text-2 {
+		font-size: 70px;
+	}
+	
+	.home .home-content .text-3 {
+		font-size: 35px;
+	}
+	/*about section responsive*/
+	
+	.about .about-content .column {
+		width: 100%;
+	}
+
+	.about .about-content .left{
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto 60px;
+	}
+
+	.about .about-content .right{
+		flex: 100%;
+	}
+
+	
+
+}
+@media (max-width: 700px) {
+	.max-width {
+		padding: 0 23px;
+	}
+	
+	.home .home-content .text-2 {
+		font-size: 55px;
+	}
+	
+	.home .home-content .text-3 {
+		font-size: 32px;
+	}
+}
+@media (max-width: 500px) {
+	.max-width {
+		padding: 0 23px;
+	}
+	
+	.home .home-content .text-2 {
+		font-size: 50px;
+	}
+	
+	.home .home-content .text-3 {
+		font-size: 32px;
+	}
+}
+
