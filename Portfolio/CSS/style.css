@@ -26,7 +26,7 @@
 	font-family: 'Ubuntu', sans-serif;
 	transition: color 0.3 ease;
 	z-index: 100;
-	height: 100px;
+	height: 80px;
 }
 
 .navbar.sticky {
@@ -115,16 +115,18 @@
 }
 
 /*servcie section styling*/
-.service{
+.service, .team{
 	color: white;
 	background: #182157;
 }
 
-.service .title::before{
+.service .title::before,
+.team .title::before{
 	background: white;
 }
 
-.service .title::after{	
+.service .title::after,
+.team .title::after{	
 	background: #182157;
 	color: lightsteelblue;
 	content: "What I Provide";
@@ -172,7 +174,7 @@
 	margin-bottom: 10px;
 }
 /*about section styling*/
-.about, .service, .skills {
+.about, .service, .skills, .team, .contact {
 	font-family: 'poppins', sans-serif;
 }
 
@@ -180,7 +182,10 @@
 	content: "Who I Am";
 }
 
-.about .about-content, .service .serve-content, .skills, .skill-content {
+.about .about-content,
+.service .serve-content, 
+.skills .skill-content,
+.contact .contact-content {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -261,7 +266,96 @@ section .title::after {
 	transform: translateX(-50%);
 }
 
+/* skill section  */
+.skills .title::after{
+	content: "What I Know";
+}
 
+.skills .skill-content .column{
+	width: calc(50% - 30px) ;
+}
+
+.skills .skill-content .left .text{
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 10px;
+} 
+
+.skills .skill-content .left p{
+	text-align: justify;
+}
+
+.skills .skill-content .left a{
+	display: inline-block;
+	background: royalblue;
+	color: whitesmoke;
+	font-size: 16px;
+	padding: 8px 16px;
+	margin-top: 20px;
+	border-radius: 6px;
+	border: 2px solid steelblue;
+	transition: all 0.3s ease;
+}
+
+.skills .skill-content .left a:hover{
+	color: steelblue;
+	background: none;
+}
+
+.skills .skill-content .right .bars{
+	margin-bottom: 15px;
+}
+
+.skills .skill-content .right .info{
+	display: flex;
+	margin-bottom: 5px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.skills .skill-content .right span{
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.skills .skill-content .right .line{
+	width: 100%;
+	height: 6px;
+	background: lightgrey;
+	position: relative;
+}
+
+.skills .skill-content .right .line::before{
+	content: "";
+	position: absolute;
+	width: 80%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: royalblue;
+}
+
+.skills .skill-content .right .html::before{
+	width: 90%;
+}
+
+.skills .skill-content .right .CSS::before{
+	width: 70%;
+	background: #11cf5a;
+}
+
+.skills .skill-content .right .js::before{
+	width: 50%;
+	background: #f6fa04;
+}
+
+.skills .skill-content .right .C::before{
+	width: 90%;
+}
+
+.skills .skill-content .right .python::before{
+	width: 80%;
+}
 
 
 /*responsive*/
@@ -344,7 +438,12 @@ section .title::after {
 		flex: 100%;
 	}
 
-	
+	/* skill section responsive */
+
+	.skills .skill-content .column{
+		width: 100%;
+		margin-top: 35px;
+	}
 
 }
 @media (max-width: 700px) {
