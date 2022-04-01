@@ -58,6 +58,7 @@
 }
 
 .navbar .menu li a {
+	display: block;
 	color: white;
 	font-size: 18px;
 	font-weight: 500;
@@ -79,8 +80,10 @@
 	display: none;
 }
 
+/* scroll up button */
 
-/*home selection design*/
+
+/*home section design*/
 
 .home {
 	display: flex;
@@ -174,7 +177,7 @@
 	margin-bottom: 10px;
 }
 /*about section styling*/
-.about, .service, .skills, .team, .contact {
+.about, .service, .skills, .team, .contact, footer {
 	font-family: 'poppins', sans-serif;
 }
 
@@ -234,6 +237,7 @@
 /*all similar content styling*/
 section {
 	padding-top: 100px;
+	padding-bottom: 20px;
 }
 
 section .title {
@@ -358,6 +362,7 @@ section .title::after {
 }
 
 
+
 /*responsive*/
 
 @media (max-width: 1300px) {
@@ -440,7 +445,8 @@ section .title::after {
 
 	/* skill section responsive */
 
-	.skills .skill-content .column{
+	.skills .skill-content .column,
+	.contact .contact-content .column{
 		width: 100%;
 		margin-top: 35px;
 	}

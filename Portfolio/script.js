@@ -11,12 +11,11 @@ $(document).ready(function(){
 		}
 	});
 
+
 	//toggle navbar
 	$('.menu-btn').click(function(){
 		$('.navbar .menu').toggleClass("active");
 		$('.menu-btn h2').toggleClass("active");
 	});
-
-	
 
 });

@@ -6,23 +6,26 @@
       <title>Personal Portfolio</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
-      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-      
+      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>  
       <link rel="stylesheet" type="text/css" href="CSS/style.css">
    </head>
    <body>
+      <div class="scroll-up-btn">
+         <i class="fas fa-angle-up"></i>
+      </div>
+
       <nav class="navbar">
          <div class="max-width">
             <div class="logo">
                <a href="#">Portfo<span>lio.</span></a>
             </div>
             <ul class="menu">
-               <li><a href="#">Home</a></li>
-               <li><a href="#">About</a></li>
-               <li><a href="#">Services</a></li>
-               <li><a href="#">Skills</a></li>
-               <li><a href="#">Teams</a></li>
-               <li><a href="#">Contact</a></li>
+               <li><a href="#Home" class="menu-btn">Home</a></li>
+               <li><a href="#about" class="menu-btn">About</a></li>
+               <li><a href="#services" class="menu-btn">Services</a></li>
+               <li><a href="#skills" class="menu-btn">Skills</a></li>
+               <li><a href="#team" class="menu-btn">Teams</a></li>
+               <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
                <h2>&#9776;</h2>
@@ -35,7 +38,7 @@
             <div class="home-content">
                <div class="text-1">Hello Everyone!! I am</div>
                <div class="text-2">Imran Ahmed</div>
-               <div class="text-3">& I am a <span>Student</span></div>
+               <div class="text-3">& I am a <span class="typing"></span></div>
             </div>
          </div>
       </section>
@@ -48,7 +51,7 @@
                   <img src="images\profile-1.jpg" width="450px" height="450px">
                </div>
                <div class="column right">
-                  <div class="text">I am Imran Ahmed and I am a <span>Student</span></div>
+                  <div class="text">I am Imran Ahmed and I am a <span class="typing-2">Student</span></div>
                   <p>
                       As they are completely different fields but they are interdependent on each other. Also, it is due to science contribution we can create new innovation and build new technological tools. Apart from that, the research conducted in laboratories contributes a lot to the development of technologies. On the other hand, technology extends the agenda of science.
                       Vital Part of our Life.
@@ -167,7 +170,62 @@
          </div>
       </section>
 
-      
+      <!-- team Section -->
+      <section class="team" id="team">
+         <div class="max-width">
+            <h2 class="title">My Team</h2>
+            <div class="carousel owl-carousel">
+               <div class="card">
+                  <div class="box">
+                     <img src="images/i.jpg" alt="Imran Ahmed">
+                     <div class="text">Imran Ahmed</div>
+                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint esse nostrum officiis minus tempore quas. Perferendis provident soluta cumque velit doloremque, minima quo! Deleniti explicabo laudantium, aliquam eius necessitatibus quisquam.</p>
+                  </div>
+               </div>
+
+               <div class="card">
+                  <div class="box">
+                     <img src="images/t.jpg" alt="Tanvir Ahmed">
+                     <div class="text">Tanvir Ahmed</div>
+                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint esse nostrum officiis minus tempore quas. Perferendis provident soluta cumque velit doloremque, minima quo! Deleniti explicabo laudantium, aliquam eius necessitatibus quisquam.</p>
+                  </div>
+               </div>
+               
+               <div class="card">
+                  <div class="box">
+                     <img src="images/a.jpg" alt="Anik Ahmed">
+                     <div class="text">Anik Ahmed</div>
+                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint esse nostrum officiis minus tempore quas. Perferendis provident soluta cumque velit doloremque, minima quo! Deleniti explicabo laudantium, aliquam eius necessitatibus quisquam.</p>
+                  </div>
+               </div>
+
+               <div class="card">
+                  <div class="box">
+                     <img src="images/h.jpg" alt="Mehedi Hasan">
+                     <div class="text">Mehedi Hasan</div>
+                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint esse nostrum officiis minus tempore quas. Perferendis provident soluta cumque velit doloremque, minima quo! Deleniti explicabo laudantium, aliquam eius necessitatibus quisquam.</p>
+                  </div>
+               </div>
+
+               <div class="card">
+                  <div class="box">
+                     <img src="images/f.jpg" alt="Fahim-Ur-Rahman">
+                     <div class="text">Fahim-Ur-Rahman</div>
+                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint esse nostrum officiis minus tempore quas. Perferendis provident soluta cumque velit doloremque, minima quo! Deleniti explicabo laudantium, aliquam eius necessitatibus quisquam.</p>
+                  </div>
+               </div>
+
+               <div class="card">
+                  <div class="box">
+                     <img src="images/p.jpg" alt="Prottoy Modak">
+                     <div class="text">Prottoy Modak</div>
+                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint esse nostrum officiis minus tempore quas. Perferendis provident soluta cumque velit doloremque, minima quo! Deleniti explicabo laudantium, aliquam eius necessitatibus quisquam.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
       <br>
       <script src="script.js"></script>
 
