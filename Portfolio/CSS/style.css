@@ -361,6 +361,70 @@ section .title::after {
 	width: 80%;
 }
 
+/* team Section Styling */
+.team .title::after{
+	content: "Who Are with Me";
+}
+
+.team .carousel .card{
+	background: #8894DC;
+	border-radius: 6px;
+	padding: 25px 35px;
+	text-align: center;
+	transition: all 0.3s ease;
+}
+
+.team .carousel .card:hover{
+	background: royalblue;
+}
+
+.team .carousel .card:hover .box{
+	transform: scale(1.05);
+}
+
+.team .carousel .card .box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.team .carousel .card .box .text{
+	font-size: 25px;
+	font-weight: 600;
+	margin: 10px 0 7px 0;
+}
+
+.team .carousel .card img{
+	height: 150px;
+	width: 150px;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 5px solid rgba(57, 57, 211, 0.61);
+	transition: all 0.3s ease;
+}
+
+.team .carousel .card:hover img{
+	border-color: lightsteelblue;
+}
+
+.owl-dots{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.owl-dot{
+	height: 13px;
+	width: 13px;
+	margin: 0 5px;
+	outline: none!important;
+	border-radius: 50%;
+	border: 3.5px solid lightblue!important;
+	transition: all 0.3s ease;
+}
+
 
 
 /*responsive*/
