@@ -1,0 +1,5 @@
+function checkSign(a) {
+return (a === 0) ? "zero" : (a > 0) ? "positive" :"negative";
+}
+
+checkSign(10);
