@@ -9,6 +9,29 @@ $(document).ready(function(){
 		{
 			$('.navbar').removeClass("sticky");
 		}
+
+		if(this.scrollY>500){
+			$('.scroll-up-btn').addClass("show");
+		}
+		else{
+			$('.scroll-up-btn').removeClass("show");
+		}
+
+	});
+
+	// typing animation
+	var typed = new Typed(".typing", {
+		strings: ['Student', 'Developer', 'Writer', 'Blogger'],
+		typeSpeed:100,
+		backSpeed:60,
+		loop: true
+	});
+
+	var typed = new Typed(".typing-2", {
+		strings: ['Student', 'Developer', 'Writer', 'Blogger'],
+		typeSpeed:100,
+		backSpeed:60,
+		loop: true
 	});
 
 
