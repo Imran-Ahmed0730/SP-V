@@ -6,7 +6,7 @@
 	box-sizing: border-box;
 }
 
-html{
+html {
 	scroll-behavior: smooth;
 }
 
@@ -84,9 +84,10 @@ html{
 	display: none;
 }
 
+
 /* scroll up button */
 
-.scroll-up-btn{
+.scroll-up-btn {
 	position: fixed;
 	height: 45px;
 	width: 42px;
@@ -100,17 +101,18 @@ html{
 	border-radius: 6px;
 	cursor: pointer;
 	opacity: 0;
-	pointer-events:none;
+	pointer-events: none;
 	transition: all 0.3s linear;
 }
 
-.scroll-up-btn.show{
+.scroll-up-btn.show {
 	opacity: 1;
 	pointer-events: auto;
 	bottom: 30px;
 }
 
-/*home section design*/
+
+/*home selection design*/
 
 .home {
 	display: flex;
@@ -144,25 +146,28 @@ html{
 	color: lightsteelblue;
 }
 
+
 /*servcie section styling*/
-.service, .team{
+
+.service,
+.team {
 	color: white;
 	background: #182157;
 }
 
 .service .title::before,
-.team .title::before{
+.team .title::before {
 	background: white;
 }
 
 .service .title::after,
-.team .title::after{	
+.team .title::after {
 	background: #182157;
 	color: lightsteelblue;
 	content: "What I Provide";
 }
 
-.service .serve-content .card{
+.service .serve-content .card {
 	width: calc(33% - 20px);
 	background: #8894DC;
 	text-align: center;
@@ -171,40 +176,48 @@ html{
 	cursor: pointer;
 }
 
-.service .serve-content .card i{
+.service .serve-content .card i {
 	font-size: 50px;
 	color: #DA291CFF;
 }
 
-.service .serve-content .card .text{
+.service .serve-content .card .text {
 	font-size: 25px;
 	font-weight: 500;
 	margin: 10px 0 7px 0;
 }
 
-.service .serve-content .card:hover{
+.service .serve-content .card:hover {
 	background: royalblue;
 }
 
-.service .serve-content .card .box{
+.service .serve-content .card .box {
 	transition: all 0.3s ease;
 }
 
-.service .serve-content .card:hover .box{
+.service .serve-content .card:hover .box {
 	transform: scale(1.05);
 }
 
-.service .serve-content .card:hover i{
+.service .serve-content .card:hover i {
 	color: whitesmoke;
 	transition: color 0.3s ease;
 }
 
-.service .serve-content .card{
+.service .serve-content .card {
 	width: 100%;
 	margin-bottom: 10px;
 }
+
+
 /*about section styling*/
-.about, .service, .skills, .team, .contact, footer {
+
+.about,
+.service,
+.skills,
+.team,
+.contact,
+footer {
 	font-family: 'poppins', sans-serif;
 }
 
@@ -213,7 +226,7 @@ html{
 }
 
 .about .about-content,
-.service .serve-content, 
+.service .serve-content,
 .skills .skill-content,
 .contact .contact-content {
 	display: flex;
@@ -221,28 +234,35 @@ html{
 	align-items: center;
 	justify-content: space-between;
 }
+
 .about .about-content .left img {
 	height: 450px;
 	width: 450;
 	object-fit: cover;
 }
+
 .about .about-content .left {
 	width: 45%;
 }
+
 .about .about-content .right {
 	width: 55%;
 }
+
 .about .about-content .right .text span {
 	color: royalblue;
 }
+
 .about .about-content .right .text {
 	font-size: 25px;
 	font-weight: 600;
 	margin-bottom: 10px;
 }
+
 .about .about-content .right p {
 	text-align: justify;
 }
+
 .about .about-content .right a {
 	display: inline-block;
 	background: royalblue;
@@ -254,14 +274,15 @@ html{
 	border: 2px solid steelblue;
 	transition: all 0.3s ease;
 }
+
 .about .about-content .right a:hover {
 	background: none;
 	color: steelblue;
 }
 
 
-
 /*all similar content styling*/
+
 section {
 	padding-top: 100px;
 	padding-bottom: 20px;
@@ -276,6 +297,7 @@ section .title {
 	padding-bottom: 20px;
 	font-family: 'Ubuntu', sans-serif;
 }
+
 section .title::before {
 	content: "";
 	position: absolute;
@@ -286,6 +308,7 @@ section .title::before {
 	background: black;
 	transform: translateX(-50%);
 }
+
 section .title::after {
 	position: absolute;
 	bottom: -15px;
@@ -297,26 +320,28 @@ section .title::after {
 	transform: translateX(-50%);
 }
 
+
 /* skill section  */
-.skills .title::after{
+
+.skills .title::after {
 	content: "What I Know";
 }
 
-.skills .skill-content .column{
-	width: calc(50% - 30px) ;
+.skills .skill-content .column {
+	width: calc(50% - 30px);
 }
 
-.skills .skill-content .left .text{
+.skills .skill-content .left .text {
 	font-size: 20px;
 	font-weight: 600;
 	margin-bottom: 10px;
-} 
+}
 
-.skills .skill-content .left p{
+.skills .skill-content .left p {
 	text-align: justify;
 }
 
-.skills .skill-content .left a{
+.skills .skill-content .left a {
 	display: inline-block;
 	background: royalblue;
 	color: whitesmoke;
@@ -328,35 +353,35 @@ section .title::after {
 	transition: all 0.3s ease;
 }
 
-.skills .skill-content .left a:hover{
+.skills .skill-content .left a:hover {
 	color: steelblue;
 	background: none;
 }
 
-.skills .skill-content .right .bars{
+.skills .skill-content .right .bars {
 	margin-bottom: 15px;
 }
 
-.skills .skill-content .right .info{
+.skills .skill-content .right .info {
 	display: flex;
 	margin-bottom: 5px;
 	align-items: center;
 	justify-content: space-between;
 }
 
-.skills .skill-content .right span{
+.skills .skill-content .right span {
 	font-weight: 600;
 	font-size: 18px;
 }
 
-.skills .skill-content .right .line{
+.skills .skill-content .right .line {
 	width: 100%;
 	height: 6px;
 	background: lightgrey;
 	position: relative;
 }
 
-.skills .skill-content .right .line::before{
+.skills .skill-content .right .line::before {
 	content: "";
 	position: absolute;
 	width: 80%;
@@ -366,34 +391,36 @@ section .title::after {
 	background: royalblue;
 }
 
-.skills .skill-content .right .html::before{
+.skills .skill-content .right .html::before {
 	width: 90%;
 }
 
-.skills .skill-content .right .CSS::before{
+.skills .skill-content .right .CSS::before {
 	width: 70%;
 	background: #11cf5a;
 }
 
-.skills .skill-content .right .js::before{
+.skills .skill-content .right .js::before {
 	width: 50%;
 	background: #f6fa04;
 }
 
-.skills .skill-content .right .C::before{
+.skills .skill-content .right .C::before {
 	width: 90%;
 }
 
-.skills .skill-content .right .python::before{
+.skills .skill-content .right .python::before {
 	width: 80%;
 }
 
+
 /* team Section Styling */
-.team .title::after{
+
+.team .title::after {
 	content: "Who Are with Me";
 }
 
-.team .carousel .card{
+.team .carousel .card {
 	background: #8894DC;
 	border-radius: 6px;
 	padding: 25px 35px;
@@ -401,15 +428,15 @@ section .title::after {
 	transition: all 0.3s ease;
 }
 
-.team .carousel .card:hover{
+.team .carousel .card:hover {
 	background: royalblue;
 }
 
-.team .carousel .card:hover .box{
+.team .carousel .card:hover .box {
 	transform: scale(1.05);
 }
 
-.team .carousel .card .box{
+.team .carousel .card .box {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -418,13 +445,13 @@ section .title::after {
 	cursor: pointer;
 }
 
-.team .carousel .card .box .text{
+.team .carousel .card .box .text {
 	font-size: 25px;
 	font-weight: 600;
 	margin: 10px 0 7px 0;
 }
 
-.team .carousel .card img{
+.team .carousel .card img {
 	height: 150px;
 	width: 150px;
 	object-fit: cover;
@@ -433,16 +460,16 @@ section .title::after {
 	transition: all 0.3s ease;
 }
 
-.team .carousel .card:hover img{
+.team .carousel .card:hover img {
 	border-color: lightsteelblue;
 }
 
-.owl-dots{
+.owl-dots {
 	text-align: center;
 	margin-top: 20px;
 }
 
-.owl-dot{
+.owl-dot {
 	height: 13px;
 	width: 13px;
 	margin: 0 5px;
@@ -452,82 +479,83 @@ section .title::after {
 	transition: all 0.3s ease;
 }
 
-.owl-dot.active{
+.owl-dot.active {
 	width: 35px;
 	border-radius: 14px;
 }
 
 .owl-dot.active,
-.owl-dot.active:hover{
+.owl-dot.active:hover {
 	background: lightblue!important;
 }
 
 
 /* contact section styling */
 
-.contact .title::after{
+.contact .title::after {
 	content: "Get in Touch";
 }
 
-.contact .contact-content .column{
+.contact .contact-content .column {
 	width: calc(50% - 30px);
 }
 
-.contact .contact-content .left p{
+.contact .contact-content .left p {
 	text-align: justify;
 }
 
-.contact .contact-content .left .text{
+.contact .contact-content .left .text {
 	font-size: 20px;
 	font-weight: 600;
 	margin-bottom: 10px;
 }
 
-.contact .contact-content .left .icon{
+.contact .contact-content .left .icon {
 	margin: 10px 0;
 }
-.contact .contact-content .row{
+
+.contact .contact-content .row {
 	display: flex;
 	height: 65px;
 	align-items: center;
 }
 
-.contact .contact-content .row .info{
+.contact .contact-content .row .info {
 	margin-left: 30px;
 }
 
-.contact .contact-content .row i{
+.contact .contact-content .row i {
 	font-size: 25px;
 	color: royalblue;
 }
 
-.contact .contact-content .info .head{
+.contact .contact-content .info .head {
 	font-weight: 600;
 }
 
-.contact .contact-content .info .sub-title{
-	color: #333;	
+.contact .contact-content .info .sub-title {
+	color: #333;
 }
 
-.contact .right form .fields{
+.contact .right form .fields {
 	display: flex;
 }
 
-.contact .right .text{
+.contact .right .text {
 	font-size: 20px;
 	font-weight: 600;
 	margin-bottom: 10px;
 }
 
-.contact .right form .fields field, 
-.contact .right form .field{
+.contact .right form .fields field,
+.contact .right form .field {
 	height: 45px;
 	width: 100%;
 	margin-bottom: 15px;
 }
 
 .contact .right form .field input,
-.contact .right form .textarea textarea{
+.contact .right form .textarea textarea {
 	height: 100%;
 	width: 100%;
 	border: 1px solid lightgray;
@@ -538,31 +566,30 @@ section .title::after {
 	font-family: 'Poppins', sans-serif;
 }
 
-.contact .right form .textarea textarea{
+.contact .right form .textarea textarea {
 	padding-top: 10px;
 	resize: none;
 }
 
-.contact .right form .name{
+.contact .right form .name {
 	margin-right: 10px;
 }
 
-.contact .right form .email{
+.contact .right form .email {
 	margin-left: 10px;
 }
 
-.contact .right form .textarea{
+.contact .right form .textarea {
 	height: 80px;
 	width: 100%;
-	
 }
 
-.contact .right form .button{
+.contact .right form .button {
 	height: 50px;
 	width: 170px;
 }
 
-.contact .right form .button button{
+.contact .right form .button button {
 	height: 100%;
 	width: 100%;
 	cursor: pointer;
@@ -575,27 +602,30 @@ section .title::after {
 	transition: all 0.3s ease;
 }
 
-.contact .right form .button button:hover{
+.contact .right form .button button:hover {
 	color: steelblue;
 	background: none;
 }
 
+
 /* footer Section Styling */
-footer{
+
+footer {
 	background: #8894DC;
 	padding: 20px 23px;
 	color: white;
 	text-align: center;
 }
 
-footer span a{
+footer span a {
 	color: blue;
 	text-decoration: none;
 }
 
-footer span a:hover{
+footer span a:hover {
 	text-decoration: underline;
 }
+
 
 /*responsive*/
 
@@ -618,16 +648,15 @@ footer span a:hover{
 		padding: 0 80px;
 	}
 }
+
 @media (max-width: 947px) {
 	.menu-btn {
 		display: block;
 		z-index: 999;
 	}
-	
 	.menu-btn h2.active:before {
 		content: \274C;
 	}
-	
 	.navbar .menu {
 		position: fixed;
 		height: 100vh;
@@ -639,77 +668,63 @@ footer span a:hover{
 		padding-top: 80px;
 		transition: all 0.3s ease;
 	}
-	
 	.navbar .menu li {
 		display: block;
 	}
-	
 	.navbar .menu.active {
 		left: 0;
 	}
-	
 	.navbar .menu li a {
 		display: inline-block;
 		font-size: 25px;
 		margin: 20px 0;
 	}
-	
 	.home .home-content .text-2 {
 		font-size: 70px;
 	}
-	
 	.home .home-content .text-3 {
 		font-size: 35px;
 	}
 	/*about section responsive*/
-	
 	.about .about-content .column {
 		width: 100%;
 	}
-
-	.about .about-content .left{
+	.about .about-content .left {
 		display: flex;
 		justify-content: space-between;
 		margin: 0 auto 60px;
 	}
-
-	.about .about-content .right{
+	.about .about-content .right {
 		flex: 100%;
 	}
-
 	/* skill section responsive */
-
 	.skills .skill-content .column,
-	.contact .contact-content .column{
+	.contact .contact-content .column {
 		width: 100%;
 		margin-top: 35px;
 	}
-
 }
+
 @media (max-width: 700px) {
 	.max-width {
 		padding: 0 23px;
 	}
-	
 	.home .home-content .text-2 {
 		font-size: 55px;
 	}
-	
-	.home .home-content .text-3 {
-		font-size: 32px;
-	}
-}
-@media (max-width: 500px) {
-	.max-width {
-		padding: 0 23px;
-	}
-	
-	.home .home-content .text-2 {
-		font-size: 50px;
-	}
-	
 	.home .home-content .text-3 {
 		font-size: 32px;
 	}
 }
 
+@media (max-width: 500px) {
+	.max-width {
+		padding: 0 23px;
+	}
+	.home .home-content .text-2 {
+		font-size: 50px;
+	}
+	.home .home-content .text-3 {
+		font-size: 32px;
+	}
+}
