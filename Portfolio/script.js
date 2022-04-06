@@ -1,44 +1,44 @@
-$(document).ready(function(){
-	$(window).scroll(function(){
-		if(this.scrollY > 20) 
-		{
+$(document).ready(function () {
+	$(window).scroll(function () {
+		if (this.scrollY > 20) {
 			$('.navbar').addClass("sticky");
-		}
-
-		else
-		{
+		} else {
 			$('.navbar').removeClass("sticky");
 		}
 
-		if(this.scrollY>500){
+		if (this.scrollY > 500) {
 			$('.scroll-up-btn').addClass("show");
-		}
-		else{
+		} else {
 			$('.scroll-up-btn').removeClass("show");
 		}
+	});
 
+	// slide up
+	$('.scroll-up-btn').click(function () {
+		$('html').animate({
+			scrollTop: 0
+		});
+	});
+
+	//toggle navbar
+	$('.menu-btn').click(function () {
+		$('.navbar .menu').toggleClass("active");
+		$('.menu-btn h2').toggleClass("active");
 	});
 
 	// typing animation
 	var typed = new Typed(".typing", {
 		strings: ['Student', 'Developer', 'Writer', 'Blogger'],
-		typeSpeed:100,
-		backSpeed:60,
+		typeSpeed: 100,
+		backSpeed: 60,
 		loop: true
 	});
 
 	var typed = new Typed(".typing-2", {
 		strings: ['Student', 'Developer', 'Writer', 'Blogger'],
-		typeSpeed:100,
-		backSpeed:60,
+		typeSpeed: 100,
+		backSpeed: 60,
 		loop: true
-	});
-
-
-	//toggle navbar
-	$('.menu-btn').click(function(){
-		$('.navbar .menu').toggleClass("active");
-		$('.menu-btn h2').toggleClass("active");
 	});
 
 	// owl-carousel
@@ -48,21 +48,21 @@ $(document).ready(function(){
 		autoplayTimeOut: 2000,
 		autoplayHoverPause: true,
 		responsive: {
-			0:{
+			0: {
 				items: 1,
 				nav: false
 			},
 
-			600:{
+			600: {
 				items: 2,
 				nav: false
 			},
 
-			1000:{
+			1000: {
 				items: 3,
 				nav: false
 			}
-		} 
+		}
 	})
 
 });
